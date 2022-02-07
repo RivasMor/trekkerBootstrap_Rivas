@@ -1,0 +1,97 @@
+.divCover{
+    margin-top: 4vh;
+}
+.cardInner{
+    transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .cardFront, .cardBack {
+    
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  .cardBack{
+    transform: rotateY(180deg);
+  }
+
+  .footer{
+    background-color: #EBEBEB;     
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 20%;
+    
+}
+
+.footerIndex{
+    margin-left: 0%;
+}
+
+.navBarListFooter a{    
+    
+    text-decoration: none;
+    color:black;
+    font-size: 13px;   
+    
+}
+.socialMediaItem{
+    list-style-type: none;
+    
+}
+.navBarItemFooter{
+    list-style-type: none;
+}
+.navBarItemFooter a:hover{
+    text-decoration: underline;
+
+}
+.socialMediaItem a:hover{
+    text-decoration: underline;
+}
+
+
+.listSocialMedia a{
+    list-style-type:none;
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width:480px) {
+    
+    .footer{
+        background-color: #EBEBEB;     
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        }
+    
+        .navBarListFooter a{       
+        text-decoration: none;
+        color:black;
+        font-size: 13px;   
+        
+        }
+        .socialMediaItem{
+        list-style-type: none;
+        
+        }
+        .navBarItemFooter{
+        list-style-type: none;
+        }
+        .navBarItemFooter a:hover{
+        text-decoration: underline;
+    
+        }
+        .socialMediaItem a:hover{
+        text-decoration: underline;
+        }
+        .listSocialMedia a{
+        list-style-type:none;
+        text-decoration: none;
+        color: black;
+        }
+}
