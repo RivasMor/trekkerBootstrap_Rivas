@@ -95,3 +95,134 @@
         color: black;
         }
 }
+/*Advices*/
+
+.imgCoverAdvices{
+    width: 70%;
+    height: 60vh;
+}
+
+.coverAdvices{    
+    width: 80%;
+    height: 70vh;
+    background-image: url("../img/backgroundAdvices1.jpg");
+    background-size: cover;  
+    margin-bottom: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 10%;
+    
+
+}
+.divCoverAdvices{
+    
+    width: 80%;
+    height: 10vh;
+    background-color: rgb(241,241,241,.9);
+    opacity: 0.8;
+    
+   
+    
+}
+.paragraphCoverAdvices{
+    padding-top: 60px;
+    text-align: center;
+}
+
+.coverAbout{
+    background-image: url("../img/trekking.jpg");
+    margin-bottom: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 10%;
+}
+.divCoverAbout{
+   background-color: rgb(252, 240, 225);
+   opacity: 0.8;   
+   width: 80%;
+    height: 10vh;    
+   
+}
+.paragraphCoverAbout{
+    padding-top: 60px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footerAbout{
+    background-color: rgb(252, 240, 225);
+    opacity: 0.7;
+}
+
+
+/*Experiencias*/
+.containerExp {
+    transform-style: preserve-3d
+}
+
+.containerExp .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer
+}
+
+.containerExp .box .body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.9s ease
+}
+
+.containerExp .box .body .imgContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d
+}
+
+.containerExp .box .body .imgContainer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.containerExp .box .body .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg)
+}
+
+.containerExp .box:hover .body {
+    transform: rotateY(180deg)
+}
+
+.containerExp .box .body .content div {
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg, #00a1fe, #3bd1ff);
+    transform: translateZ(100px)
+}
+
+.containerExp .box .body .content div h3 {
+    letter-spacing: 1px
+}
