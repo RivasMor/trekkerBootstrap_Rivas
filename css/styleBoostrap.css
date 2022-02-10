@@ -226,3 +226,69 @@
 .containerExp .box .body .content div h3 {
     letter-spacing: 1px
 }
+.btn-primary{
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: #2193b0;
+}
+.btn-primary:hover{
+    background-color: #6dd5ed;
+    color: gray;
+}
+
+
+/* Orden de lugares */
+.colPlaces1{
+    order: 1;
+}
+.colPlaces2{
+    order: 2;
+}
+.colPlaces3{
+    order: 3;
+}
+.colPlaces4{
+    order: 4;
+}
+.colPlaces5{
+    order: 5;
+}
+.colPlaces6{
+    order: 6;
+}
+.colPlaces7{
+    order: 7;
+}
+.colPlaces8{
+    order: 8;
+}
+
+@media (max-width:480px) {
+    .colPlaces1{
+        order: 1;
+    }
+    .colPlaces2{
+        order: 2;
+    }
+    .colPlaces3{
+        order: 4;
+    }
+    .colPlaces4{
+        order: 3;
+    }
+    .colPlaces5{
+        order: 5;
+    }
+    .colPlaces6{
+        order: 6;
+    }
+    .colPlaces7{
+        order: 8;
+    }
+    .colPlaces8{
+        order: 7;
+    }
+    
+}
+
