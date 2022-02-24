@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio</title>
+  <meta name="keywords" content="turismo,senderismo,montaña,trekking,hiking,caminata">
+  <meta name="description" content="Para hacer Trekking no necesitas ser un experto. Necesitas buena actitud, algunos consejos, y elegir un buen lugar.
+  Trekker puede ayudarte a encontrar tu proximo desafío">
   <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/styleBoostrap.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,14 +22,14 @@
   <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
 </head>
 
-<body class="container text-black">
+<body class="container-fluid">
   <!--Header/navBar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
     <div class="container-fluid">
-      <nav class="navbar navbar-light bg-light">
-        <div class="container">
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container ">
           <a class="navbar-brand ms-4" href="#">
-            <img src="img/TrekkerLogo3.png" style="margin-left: 20%;" alt="" width="30" height="24">
+            <img src="img/TrekkerLogo2.svg" style="margin-left: 20%;" alt="Trekker Logo" width="15%" height="15%">
           </a>
         </div>
       </nav>
@@ -55,44 +58,42 @@
       </div>
     </div>
   </nav>
-  <!--Portada-->
-  <div class="divCover" style="display: flex; justify-content: center;">
-    <img src="img/imgCoverBackground.jpg" style="width: 80%;">
-  </div>
+  <!--Portada-->  
+    <img class="img-fluid"  src="img/portada_1.png" alt="Imagen de portada" style="width: 100%">
   <!--Seccion cards-->
-  <p class="h6 text-center mt-5">Los lugares mas elegidos</p>
-  <div class="container d-flex align-items-center justify-content-center">
+  <p class="h3 text-center my-5">Los lugares mas elegidos</p>
+  <div class="container">
     <div class="row">
-      <div class="col">
-        <div class="card" style="width: 18rem; padding-bottom:  2vh;">
-          <img src="img/card111.jpg" class="card-img-top" alt="...">
+      <div class="col-12 col-md-4">
+        <div class="card shadow p-3 mb-5 rounded">
+          <img src="img/card111.jpg" class="card-img-top" alt="Foto - Los Hornillos">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Los Hornillos</h5>
+            <p class="card-text">Este paseo de media dificultad atraviesa el corazón de Rio Ceballos en sierras chicas</p>
             <div class="text-center">
               <a href="#" class="btn btn-primary">Ver</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card" style="width: 18rem; padding-bottom:  2vh;">
-          <img src="img/card2.jpg" class="card-img-top" alt="...">
+      <div class="col-12 col-md-4">
+        <div class="card shadow p-3 mb-5 rounded" >
+          <img src="img/card2.jpg" class="card-img-top" alt="Foto-Los helechos">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Los Helechos</h5>
+            <p class="card-text">Ubicado en la falda, este recorrido de dificultad baja combina naturaleza e historia... </p>
             <div class="text-center">
               <a href="#" class="btn btn-primary">Ver</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card" style="width: 18rem; padding-bottom:  2vh;">
-          <img src="img/card111.jpg" class="card-img-top" alt="...">
+      <div class="col-12 col-md-4">
+        <div class="card shadow p-3 mb-5 rounded">
+          <img src="img/copina.jpg" class="card-img-top" alt="Foto-Copina">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Pozo de la Ganza</h5>
+            <p class="card-text">Los trekkers con millas recorridas afrontan 3 horas de recorrido en Copina, bajo el vuelo...</p>
             <div class="text-center">
               <a href="#" class="btn btn-primary">Ver</a>
             </div>
@@ -101,23 +102,64 @@
       </div>
     </div>
   </div>
-  <div class="container d-flex align-items-center justify-content-center my-2">
+  <div class="container d-flex align-items-center justify-content-center my-2 mb-5">
     <button type="button" class="btn btn-primary btn-lg">Ver mas</button>
   </div>
+  <!-- Productos --> 
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/prod1.png" class="d-block w-100 prodCoverImg" alt="Producto1">
+          <div class="prodCoverCaption">
+            <div class="text-center">Trekker Frecuente</div>
+            <p class="text-center">Registrate en Trekker y convertite en un referente del trekking. Comenza a sumar millas hoy mismo!</p>
+          </div>
+            
+        </div>
+        <div class="carousel-item">
+          <img src="img/prod2.png" class="d-block w-100 prodCoverImg" alt="Producto2">
+          <div class="prodCoverCaption">
+            <div class="text-center">Trekker Guía</div>
+            <p class="text-center">Si sos un guía habilitado, Trekker te brinda la aplicación ideal para organizar un recorrido.</p>            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/prod3.png" class="d-block w-100 prodCoverImg"  alt="Producto3">
+          <div class="prodCoverCaption">
+            <div class="text-center">Trekker Store</div>
+            <p class="text-center">Los mejores descuentos en indumentaria están en Trekker! Ingresa al Store.</p>            
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+ 
   <!-- Experiencias-->
-  <p class="h6 text-center mt-5">Experiencias de Trekkers</p>
+  <p class="h3 text-center mt-5">Experiencias de Trekkers</p>
   <div class="container">
     <div class="row">
       <div class="col">
         <div class="containerExp d-flex align-items-center justify-content-center flex-wrap">
           <div class="box">
             <div class="body">
-              <div class="imgContainer"> <img src="img/exp1.jpg" alt=""> </div>
+              <div class="imgContainer"> <img src="img/exp1.jpg" alt="Trekkers"> </div>
               <div class="content d-flex flex-column align-items-center justify-content-center">
                 <div>
-                  <h3 class="text-white fs-5">Post Title</h3>
-                  <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed cum
-                    neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
+                  <h3 class="text-white fs-5">Karen y John</h3>
+                  <p class="fs-6 text-white">Nos encantó conocer Cordóba de esta manera! Gracias a Trekker pudimos 
+                    visitar muchos lugares que no estaban lejos de nuestro alojamiento.</p>
                 </div>
               </div>
             </div>
@@ -128,12 +170,13 @@
         <div class="containerExp d-flex align-items-center justify-content-center flex-wrap">
           <div class="box">
             <div class="body">
-              <div class="imgContainer"> <img src="img/exp2.jpg" alt=""> </div>
+              <div class="imgContainer"> <img src="img/exp3.jpg" alt="trekkers"> </div>
               <div class="content d-flex flex-column align-items-center justify-content-center">
                 <div>
-                  <h3 class="text-white fs-5">Post Title</h3>
-                  <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed cum
-                    neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
+                  <h3 class="text-white fs-5">Anto y Denis</h3>
+                  <p class="fs-6 text-white">Hace mucho que vivimos en la zona y nos sorprendió los lugares escondidos de Córdoba! Estamos dispuestos a visitar
+                    todos los lugares que nos diga Trekker!
+                  </p>
                 </div>
               </div>
             </div>
